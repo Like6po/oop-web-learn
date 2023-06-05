@@ -60,7 +60,7 @@ DataSet o--> "List[Hyperparameter]"
 
 Sample <|-- UnknownSample
 Sample <|-- KnownSample
-ClassifiedSample <|-- UnknownSample
-TestSample <|-- KnownSample
-TrainSample <|-- KnownSample
+UnknownSample <|-- ClassifiedSample
+KnownSample <|-- TestSample
+KnownSample <|-- TrainSample
 @enduml
